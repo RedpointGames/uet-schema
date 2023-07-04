@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "UETVersion": {
+      "default": "BleedingEdge",
+      "enum": [
+        "BleedingEdge",
+        "2023.1185.1089"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "UETVersion": {
+            "const": "BleedingEdge"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://raw.githubusercontent.com/RedpointGames/uet-schema/main/2023.1185.1089.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "UETVersion": {
+            "const": "2023.1185.1089"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://raw.githubusercontent.com/RedpointGames/uet-schema/main/2023.1185.1089.json"
+      }
+    }
+  ]
+}
