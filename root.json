@@ -5,6 +5,7 @@
       "default": "BleedingEdge",
       "enum": [
         "BleedingEdge",
+        "2025.1064.602",
         "2025.1064.546",
         "2025.1062.589",
         "2025.1061.513",
@@ -402,7 +403,19 @@
         }
       },
       "then": {
-        "$ref": "https://raw.githubusercontent.com/RedpointGames/uet-schema/main/2025.1064.546.json"
+        "$ref": "https://raw.githubusercontent.com/RedpointGames/uet-schema/main/2025.1064.602.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "UETVersion": {
+            "const": "2025.1064.602"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://raw.githubusercontent.com/RedpointGames/uet-schema/main/2025.1064.602.json"
       }
     },
     {
