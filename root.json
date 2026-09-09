@@ -969,7 +969,7 @@
       "if": {
         "properties": {
           "UETVersion": {
-            "const": "BleedingEdge"
+            "const": "2026.1252.476"
           }
         }
       },
@@ -981,12 +981,12 @@
       "if": {
         "properties": {
           "UETVersion": {
-            "const": "2026.1252.476"
+            "const": "BleedingEdge"
           }
         }
       },
       "then": {
-        "$ref": "https://raw.githubusercontent.com/RedpointGames/uet-schema/main/2026.1252.476.json"
+        "$ref": "https://raw.githubusercontent.com/RedpointGames/uet-schema/main/2026.1252.473.json"
       }
     },
     {
